@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-o9J7GlCk2FRUd06I8+6ToRIqOR+ib2OEhSsp5v5K9ytxNGqlEOl+gbeGMeWjr/1B4L0J2xvMt6RJ3TbPBLUQ6g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -12,9 +13,8 @@
         <div class="container ">
             <div class="row justify-content-center">
                 <div class="col-9 form position-relative">
-                    <div id="loading-text">LOADING</div>
-                    <div id="loading" class="loading">
-                    </div>
+                    <div id="loading-text" class="text-info fw-bold">LOADING</div>
+                    <div id="loading" class="loading"></div> 
                     <form action="" class="text-center ">
                         <div class="box">
                             <img src="./images/logo.jpg" class="border rounded-pill logo" alt="">
@@ -27,10 +27,13 @@
                         <div class="form-group mb-4 d-flex justify-content-center">
                             <input type="text" id="key-input" name="" class="form-control w-50 border border-2 border-secondary" id="" placeholder="Key(Spaces will be ignored)"> 
                         </div>  
-                        <button type="button" id="button" class="btn encrypt w-50 text-white fw-bold fs-5">
-                            Encrypt
-                            <i class="fas fa-arrow-alt-circle-right"></i>
-                        </button>
+                        <div class="position-relative">
+                            <!-- mũi tên trong span -->
+                            <span class="arrow position-absolute"></span>
+                            <button type="button" id="button" class="btn encrypt w-50 text-white fw-bold fs-5">
+                                Encrypt  
+                            </button>
+                        </div>
                     </form>
                     <span id="result" class="btn">Result will appear here</span>
                 </div> 
@@ -39,5 +42,6 @@
     </div>
 
     <script src="./script.js"></script>
+    
 </body>
 </html>

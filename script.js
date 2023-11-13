@@ -72,12 +72,12 @@ button.addEventListener('click', function () {
         seconds++;
     }, 900);
 
-    // Thực hiện mã hóa (có thể là một hàm bất đồng bộ)
+    // Thực hiện mã hóa 
     setTimeout(function () {
-        clearInterval(intervalId); // Dừng đếm giây khi quá trình mã hóa kết thúc
+        clearInterval(intervalId);  
         loading.style.display = 'none';
-        loadingText.innerHTML = ''; // Đặt lại văn bản của phần tử hiển thị số giây
+        loadingText.innerHTML = '';  
         encrypt(keyInput.value, plainInput.value);
-    }, 3000); // Đặt thời gian là 3 giây hoặc thời gian thực hiện mã hóa của bạn
+    }, 3000);  
 });
-
+ 

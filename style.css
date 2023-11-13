@@ -150,3 +150,49 @@ button:hover {
     font-size: 18px;
     margin-top: 5px;
 }
+/* Thêm mũi tên cho nút Encrypt */
+.arrow {
+    top: 44% !important;
+    left: 16% !important;
+    transform: translateY(-50%) !important;
+}
+
+.arrow::before {
+    content: '\2192';  
+    margin-right: 5px;  
+    font-size: 50px;
+    color: orange;  
+    animation: arrowBlink 1s infinite;  
+    font-weight: bolder;
+}
+
+@keyframes arrowBlink {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fullscreen-effect {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.fullscreen-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    animation: fullscreen-effect 1s ease-out;
+}
