@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="bg-danger">
+        <div class="container ">
+            <div class="row justify-content-center">
+                <div class="col-9 form position-relative">
+                    <div id="loading-text">LOADING</div>
+                    <div id="loading" class="loading">
+                    </div>
+                    <form action="" class="text-center ">
+                        <div class="box">
+                            <img src="./images/logo.jpg" class="border rounded-pill logo" alt="">
+                        </div>
+                        <h3>K17 - DHHTTT17A - Nguyễn Thành Phát</h3>
+                        <h3 class="name">Vigenere Cipher Encrypter</h3>
+                        <div class="form-group mb-3 d-flex justify-content-center">
+                            <input type="text" id="plain-input" name="" class="form-control w-50 border border-2 border-secondary" id="" placeholder="Plaintext"> 
+                        </div>  
+                        <div class="form-group mb-4 d-flex justify-content-center">
+                            <input type="text" id="key-input" name="" class="form-control w-50 border border-2 border-secondary" id="" placeholder="Key(Spaces will be ignored)"> 
+                        </div>  
+                        <button type="button" id="button" class="btn encrypt w-50 text-white fw-bold fs-5">
+                            Encrypt
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                        </button>
+                    </form>
+                    <span id="result" class="btn">Result will appear here</span>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
